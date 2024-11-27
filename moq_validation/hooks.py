@@ -12,7 +12,7 @@ app_license = "agpl-3.0"
 
 doc_events = {
     "Quotation": {
-        "before_save": "moq_validation.validation_script.validate_moq",
+        "before_save": "moq_validation.moq_validation.validation_script.validate_moq",
     }
 }
 

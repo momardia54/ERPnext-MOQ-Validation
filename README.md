@@ -1,6 +1,7 @@
 ## Moq Validation
 
 ERPNext MOQ (Minimum Order Quantity) App
+
 This ERPNext app introduces the Minimum Order Quantity (MOQ) functionality to ensure sales processes respect the minimum quantity requirements for items.
 
 Current Features

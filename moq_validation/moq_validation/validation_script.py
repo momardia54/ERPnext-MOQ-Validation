@@ -5,6 +5,10 @@ def validate_moq(doc, method):
     """
     Validate if all items in the Quotation have a quantity >= MOQ.
     """
+    # Check if there are items in the document
+    if not doc.items:
+        return  # Do nothing if there are no items
+
     for item in doc.items:
         # Fetch the item's custom MOQ value
         custom_moq = frappe.db.get_value("Item", item.item_code, "custom_moq")
@@ -16,4 +20,3 @@ def validate_moq(doc, method):
                     item.item_code, item.qty, custom_moq
                 )
             )
-

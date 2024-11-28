@@ -1,28 +1,18 @@
-## Moq Validation
+Moq Validation
 
 ERPNext MOQ (Minimum Order Quantity) App
 
-This ERPNext app introduces the Minimum Order Quantity (MOQ) functionality to ensure sales processes respect the minimum quantity requirements for items.
+This app adds Minimum Order Quantity (MOQ) functionality to ERPNext, ensuring that sales processes respect the MOQ for items.
 
-Current Features
+Current Features:
 
-Manual Setup Required:
+Automatic Custom Field Creation:
 
-You need to manually add a custom field named custom_moq in the Item DocType for the app to function correctly.
-This field should store the minimum order quantity for each item.
-
+The app now automatically creates the custom_moq field in the Item DocType during installation, eliminating the need for manual setup.
+This field stores the minimum order quantity for each item and is set to mandatory with a default value of 1.
 
 MOQ Validation:
 
-During sales processes (e.g., Quotations, Sales Orders), if an item's quantity is less than the specified MOQ, the app will display an error message and block the transaction until the correct quantity is entered.
-
-
-Planned Updates
-
-In future versions, the app will automatically create the custom_moq field during installation, simplifying the setup process.
-
-
-
-#### License
-
-agpl-3.0
+During sales processes (e.g., Quotations, Sales Orders), if the item's quantity is less than the specified MOQ, the app displays an error message and blocks the transaction until the correct quantity is entered.
+License:
+AGPL-3.0
